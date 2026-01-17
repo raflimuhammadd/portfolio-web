@@ -1,0 +1,515 @@
+@extends('front/layouts/app')
+@section('title', 'prattfolio')
+@section('content')
+
+    {{-- Header --}}
+    <section id="Header"
+        class="relative flex flex-col gap-[100px] bg-white transition-all duration-300 dark:bg-portto-black">
+        <x-nav />
+        <div class="hero container relative mx-auto flex max-w-[1130px] items-center justify-between">
+            <div class="z-10 flex h-fit w-fit flex-col gap-[50px] text-portto-black dark:text-white">
+                <p class="text-2xl font-semibold">I’m Shayna 👋</p>
+                <h1 class="text-[80px] font-extrabold leading-[90px]">Professional Designer & Dev</h1>
+                <button
+                    class="group flex w-fit items-center rounded-full bg-portto-purple px-6 py-4 text-xl font-bold text-white shadow-lg transition-all duration-300 hover:shadow-[0_10px_20px_0_#4920E5] hover:ring-4 hover:ring-portto-purple/30">
+                    Explore Now
+                    <svg class="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="z-10 flex max-h-[567px] max-w-[471px]">
+                <img src="{{ asset('images/hero-image.png') }}" class="h-full w-full object-contain" alt="hero image">
+            </div>
+        </div>
+        <div class="company-logos w-full overflow-hidden pb-[190px]">
+            <div class="group/slider flex w-max flex-nowrap items-center">
+                <div
+                    class="logo-container group-hover/slider:pause-animate flex animate-[slide_25s_linear_infinite] flex-nowrap items-center gap-[70px] pl-[70px]">
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum1.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum2.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum3.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum4.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum1.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum2.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum3.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum4.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                </div>
+                <div
+                    class="logo-container group-hover/slider:pause-animate flex animate-[slide_25s_linear_infinite] flex-nowrap items-center gap-[70px] pl-[70px]">
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum1.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum2.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum3.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum4.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum1.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum2.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum3.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                    <div class="flex h-[40px] w-fit shrink-0">
+                        <img src="{{ asset('images/logos/logoipsum4.png') }}" class="h-full w-full object-contain"
+                            alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="stats container absolute bottom-0 left-1/2 mx-auto flex h-[180px] w-full max-w-[1130px] -translate-x-1/2 translate-y-1/2 transform items-center justify-between rounded-[30px] bg-gradient-to-r from-[#FFEDD3] to-[#FFCD83] px-[100px] text-portto-black shadow-2xl">
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">$230M</p>
+                <p class="text-lg font-semibold">Valuation</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">31,934</p>
+                <p class="text-lg font-semibold">Projects</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">245</p>
+                <p class="text-lg font-semibold">Startups IPO</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">9/10</p>
+                <p class="text-lg font-semibold">Successful</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">562</p>
+                <p class="text-lg font-semibold">Companies</p>
+            </div>
+        </div>
+    </section>
+
+    {{-- Services --}}
+    {{-- <section id="Services" class="container mx-auto max-w-[1130px] pb-[100px] pt-[190px]">
+        <div class="flex flex-col gap-[50px]">
+            <div class="flex items-center justify-between">
+                <h2 class="text-[50px] font-extrabold leading-[70px] text-portto-black dark:text-white">Actually, I Do
+                    Design <br>& Code for Living</h2>
+                <a href=""
+                    class="h-fit w-fit rounded-full bg-portto-black p-[14px_30px] text-lg font-bold text-white transition-all duration-300 hover:bg-portto-purple hover:ring hover:ring-portto-purple dark:bg-white dark:text-portto-black dark:hover:bg-portto-purple dark:hover:text-white">All
+                    Services</a>
+            </div>
+            <div class="grid grid-cols-2 gap-[30px]">
+                <div
+                    class="flex flex-col gap-[50px] rounded-[30px] bg-gray-100 p-[50px] pb-0 transition-all duration-300 dark:bg-[#F4F5F8] dark:bg-[#FFFFFF0a]">
+                    <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-portto-purple">
+                        <img src="{{ asset('images/icons/crown.svg') }}" class="h-10 w-10 object-contain"
+                            alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-5 text-portto-black dark:text-white">
+                        <p class="text-[32px] font-extrabold leading-[48px]">High-Quality Mobile App UI/UX Design</p>
+                        <p class="text-lg leading-[34px]">Delivering great experience to users so that they are
+                            comfortable while using your product.</p>
+                    </div>
+                    <div class="h-[350px] w-full">
+                        <img src="{{ asset('images/services1.png') }}" class="w-full object-contain" alt="image">
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-[50px] rounded-[30px] bg-gray-100 p-[50px] pb-0 transition-all duration-300 dark:bg-[#FFFFFF0a]">
+                    <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-portto-green">
+                        <img src="{{ asset('images/icons/code.svg') }}" class="h-10 w-10 object-contain" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-5 text-portto-black dark:text-white">
+                        <p class="text-[32px] font-extrabold leading-[48px]">AI Business Dashboard Finance Company</p>
+                        <p class="text-lg leading-[34px]">Delivering great experience to users so that they are
+                            comfortable while using product.</p>
+                    </div>
+                    <div class="h-[350px] w-full">
+                        <img src="{{ asset('images/services2.png') }}" class="w-full object-contain" alt="image">
+                    </div>
+                </div>
+                <div
+                    class="col-span-2 flex gap-[50px] rounded-[30px] bg-gray-100 p-[50px] pb-0 transition-all duration-300 dark:bg-[#FFFFFF0a]">
+                    <div class="flex flex-col gap-[50px]">
+                        <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-portto-red">
+                            <img src="{{ asset('images/icons/3dcube.svg') }}" class="h-10 w-10 object-contain"
+                                alt="icon">
+                        </div>
+                        <div class="flex flex-col gap-5 text-portto-black dark:text-white">
+                            <p class="text-[32px] font-extrabold leading-[48px]">Robust Plugins Connected Machine
+                                Learning</p>
+                            <p class="text-lg leading-[34px]">Delivering great experience to users so that they are
+                                comfortable while using your product to grow.</p>
+                        </div>
+                    </div>
+                    <div class="flex h-[350px] w-[450px] shrink-0">
+                        <img src="{{ asset('images/services3.png') }}" class="w-full object-contain" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+
+    {{-- Projects --}}
+    <section id="Projects"
+        class="flex w-full flex-col bg-portto-black bg-[url('{{ asset('images/background/background1.png') }}')] bg-cover bg-center bg-no-repeat pb-[100px] pt-[200px] transition-all duration-300">
+        <div class="mb-[50px] flex flex-col gap-[10px]">
+            <h2 class="text-center text-[50px] font-extrabold leading-[70px] text-white">My Projects
+            </h2>
+            <p class="text-center text-lg text-white">Collaborating with amazing clients worldwide</p>
+        </div>
+        <div class="projects mb-[30px] flex w-full flex-col overflow-hidden">
+            <div class="group/slider slider flex w-max flex-nowrap items-center">
+                <div
+                    class="project-container group-hover/slider:pause-animate flex animate-[slide_50s_linear_infinite] flex-nowrap items-center gap-[30px] pl-[30px]">
+
+                    @forelse ($projects as $index => $project)
+                        @if ($index < 3)
+                            <div
+                                class="group relative flex h-[450px] w-[650px] shrink-0 rounded-[30px] border border-white bg-[#FFFFFF33] p-5 backdrop-blur">
+                                <div class="absolute h-[408px] w-[608px] overflow-hidden rounded-[30px]">
+                                    <img src="{{ Storage::url(path: $project->cover) }}"
+                                        class="h-full w-full object-cover" alt="thumbnail">
+                                </div>
+                                <div
+                                    class="relative flex w-full flex-col items-center justify-center gap-[50px] rounded-[30px] bg-portto-black opacity-0 transition-all duration-300 hover:opacity-100">
+                                    <div class="z-10 text-center">
+                                        <p class="mb-[10px] text-[32px] font-extrabold leading-[48px] text-white">
+                                            {{ $project->name }}</p>
+                                        <p class="text-lg text-[#BABABC]">
+                                            {{ $project->category }}</p>
+                                    </div>
+                                    <a href="{{ route('front.details', $project) }}"
+                                        class="z-10 h-fit w-fit rounded-full bg-portto-light-gold p-[14px_30px] text-center text-lg font-bold text-portto-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">View
+                                        Details</a>
+                                    <img src="{{ asset('images/Ellipse.svg') }}"
+                                        class="absolute left-1/2 top-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 transform"
+                                        alt="background icon">
+                                </div>
+                            </div>
+                        @endif
+                    @empty
+                    @endforelse
+
+                </div>
+                <div
+                    class="project-container group-hover/slider:pause-animate flex animate-[slide_50s_linear_infinite] flex-nowrap items-center gap-[30px] pl-[30px]">
+
+                    @forelse ($projects as $index => $project)
+                        @if ($index < 3)
+                            <div
+                                class="group relative flex h-[450px] w-[650px] shrink-0 rounded-[30px] border border-white bg-[#FFFFFF33] p-5 backdrop-blur">
+                                <div class="absolute h-[408px] w-[608px] overflow-hidden rounded-[30px]">
+                                    <img src="{{ Storage::url(path: $project->cover) }}"
+                                        class="h-full w-full object-cover" alt="thumbnail">
+                                </div>
+                                <div
+                                    class="relative flex w-full flex-col items-center justify-center gap-[50px] rounded-[30px] bg-portto-black opacity-0 transition-all duration-300 hover:opacity-100">
+                                    <div class="z-10 text-center">
+                                        <p class="mb-[10px] text-[32px] font-extrabold leading-[48px] text-white">
+                                            {{ $project->name }}</p>
+                                        <p class="text-lg text-[#BABABC]">
+                                            {{ $project->category }}</p>
+                                    </div>
+                                    <a href="{{ route('front.details', $project) }}"
+                                        class="z-10 h-fit w-fit rounded-full bg-portto-light-gold p-[14px_30px] text-center text-lg font-bold text-portto-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">View
+                                        Details</a>
+                                    <img src="{{ asset('images/Ellipse.svg') }}"
+                                        class="absolute left-1/2 top-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 transform"
+                                        alt="background icon">
+                                </div>
+                            </div>
+                        @endif
+                    @empty
+                    @endforelse
+
+                </div>
+            </div>
+        </div>
+        <div class="projects flex w-full flex-col overflow-hidden">
+            <div class="group/slider slider flex w-max flex-nowrap items-center">
+                <div
+                    class="project-container group-hover/slider:pause-animate flex animate-[slideToR_50s_linear_infinite] flex-nowrap items-center gap-[30px] pl-[30px]">
+
+                    @forelse ($projects as $index => $project)
+                        @if ($index >= 3)
+                            <div
+                                class="group relative flex h-[450px] w-[650px] shrink-0 rounded-[30px] border border-white bg-[#FFFFFF33] p-5 backdrop-blur">
+                                <div class="absolute h-[408px] w-[608px] overflow-hidden rounded-[30px]">
+                                    <img src="{{ Storage::url(path: $project->cover) }}"
+                                        class="h-full w-full object-cover" alt="thumbnail">
+                                </div>
+                                <div
+                                    class="relative flex w-full flex-col items-center justify-center gap-[50px] rounded-[30px] bg-portto-black opacity-0 transition-all duration-300 hover:opacity-100">
+                                    <div class="z-10 text-center">
+                                        <p class="mb-[10px] text-[32px] font-extrabold leading-[48px] text-white">
+                                            {{ $project->name }}</p>
+                                        <p class="text-lg text-[#BABABC]">
+                                            {{ $project->category }}</p>
+                                    </div>
+                                    <a href="{{ route('front.details', $project) }}"
+                                        class="z-10 h-fit w-fit rounded-full bg-portto-light-gold p-[14px_30px] text-center text-lg font-bold text-portto-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">View
+                                        Details</a>
+                                    <img src="{{ asset('images/Ellipse.svg') }}"
+                                        class="absolute left-1/2 top-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 transform"
+                                        alt="background icon">
+                                </div>
+                            </div>
+                        @endif
+                    @empty
+                    @endforelse
+
+                </div>
+                <div
+                    class="project-container group-hover/slider:pause-animate flex animate-[slideToR_50s_linear_infinite] flex-nowrap items-center gap-[30px] pl-[30px]">
+
+                    @forelse ($projects as $index => $project)
+                        @if ($index >= 3)
+                            <div
+                                class="group relative flex h-[450px] w-[650px] shrink-0 rounded-[30px] border border-white bg-[#FFFFFF33] p-5 backdrop-blur">
+                                <div class="absolute h-[408px] w-[608px] overflow-hidden rounded-[30px]">
+                                    <img src="{{ Storage::url(path: $project->cover) }}"
+                                        class="h-full w-full object-cover" alt="thumbnail">
+                                </div>
+                                <div
+                                    class="relative flex w-full flex-col items-center justify-center gap-[50px] rounded-[30px] bg-portto-black opacity-0 transition-all duration-300 hover:opacity-100">
+                                    <div class="z-10 text-center">
+                                        <p class="mb-[10px] text-[32px] font-extrabold leading-[48px] text-white">
+                                            {{ $project->name }}</p>
+                                        <p class="text-lg text-[#BABABC]">
+                                            {{ $project->category }}</p>
+                                    </div>
+                                    <a href="{{ route('front.details', $project) }}"
+                                        class="z-10 h-fit w-fit rounded-full bg-portto-light-gold p-[14px_30px] text-center text-lg font-bold text-portto-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FFE7C280]">View
+                                        Details</a>
+                                    <img src="{{ asset('images/Ellipse.svg') }}"
+                                        class="absolute left-1/2 top-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 transform"
+                                        alt="background icon">
+                                </div>
+                            </div>
+                        @endif
+                    @empty
+                    @endforelse
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Workflow --}}
+    <section id="Workflow"
+        class="container relative mx-auto max-w-[1130px] pb-[200px] pt-[100px] text-portto-black dark:text-white">
+        <div class="flex flex-col justify-center gap-[50px]">
+            <h2 class="text-center text-[50px] font-extrabold leading-[70px]">My Workflow Suitable <br>For Any Project
+            </h2>
+            <div class="flex items-center justify-between">
+                <div class="flex w-[350px] shrink-0 flex-col items-center gap-[30px]">
+                    <div class="flex-none">
+                        <img src="{{ asset('images/icons/messages-notif.svg') }}" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <p class="text-[22px] font-extrabold leading-[33px]">Research & Validate</p>
+                        <p class="text-lg leading-[34px]">Ensuring all requirements were matching with market
+                            conditions</p>
+                    </div>
+                </div>
+                <div class="flex w-[350px] shrink-0 flex-col items-center gap-[30px]">
+                    <div class="flex-none">
+                        <img src="{{ asset('images/icons/programming-notif.svg') }}" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <p class="text-[22px] font-extrabold leading-[33px]">Building with Teams</p>
+                        <p class="text-lg leading-[34px]">Working with agile framework to product a better results</p>
+                    </div>
+                </div>
+                <div class="flex w-[350px] shrink-0 flex-col items-center gap-[30px]">
+                    <div class="flex-none">
+                        <img src="{{ asset('images/icons/like-notif.svg') }}" alt="icon">
+                    </div>
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <p class="text-[22px] font-extrabold leading-[33px]">Deliver to Clients</p>
+                        <p class="text-lg leading-[34px]">I deliver exceptional results that exceed client expectations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Valuation Tabs --}}
+        <div
+            class="stats container absolute bottom-0 left-1/2 mx-auto flex h-[180px] w-full max-w-[1130px] -translate-x-1/2 translate-y-1/2 transform items-center justify-between rounded-[30px] bg-gradient-to-r from-[#FFEDD3] to-[#FFCD83] px-[100px] text-portto-black shadow-2xl">
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">$230M</p>
+                <p class="text-lg font-semibold">Valuation</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">31,934</p>
+                <p class="text-lg font-semibold">Projects</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">245</p>
+                <p class="text-lg font-semibold">Startups IPO</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">9/10</p>
+                <p class="text-lg font-semibold">Successful</p>
+            </div>
+            <div class="h-fit w-fit text-center">
+                <p class="text-[40px] font-extrabold leading-[60px]">562</p>
+                <p class="text-lg font-semibold">Companies</p>
+            </div>
+        </div>
+
+    </section>
+
+    {{-- Testimonials --}}
+    {{-- <section id="Testimonials" class="bg-[#F4F5F8]">
+        <div class="container mx-auto max-w-[1130px] pb-[100px] pt-[180px]">
+            <h2 class="text-center text-[50px] font-extrabold leading-[70px]">I Have Delivered Success <br>For All My
+                Clients</h2>
+            <div class="mt-[50px] grid grid-cols-2 gap-[30px]">
+                <div class="card-testi flex flex-col gap-5 rounded-[30px] bg-white p-5">
+                    <div class="flex h-[40px] shrink-0">
+                        <img src="{{ asset('images/logos/logo-testi.svg') }}" alt="logo">
+                    </div>
+                    <p class="text-[22px] font-semibold leading-[40px]">“Her working method were truly different from
+                        other freelancers, she has this kind of mindset that can create user-center product and user
+                        loved it”</p>
+                    <div class="flex h-8">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="h-[70px] w-[70px] shrink-0">
+                            <img src="{{ asset('images/photo/photo.png') }}" alt="photo">
+                        </div>
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="text-xl font-bold leading-[30px]">Jessi Lyio</p>
+                            <p class="text-lg text-[#878C9C]">CPO Agolia Modd</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-testi flex flex-col gap-5 rounded-[30px] bg-white p-5">
+                    <div class="flex h-[40px] shrink-0">
+                        <img src="{{ asset('images/logos/logo-testi2.svg') }}" alt="logo">
+                    </div>
+                    <p class="text-[22px] font-semibold leading-[40px]">“She helped us to build our first prototype to
+                        win our investor and early users heart that generate huge attraction. Will hire her back again
+                        anytime soon”</p>
+                    <div class="flex h-8">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="h-[70px] w-[70px] shrink-0">
+                            <img src="{{ asset('images/photo/photo2.png') }}" alt="photo">
+                        </div>
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="text-xl font-bold leading-[30px]">Mariam Sya</p>
+                            <p class="text-lg text-[#878C9C]">Founder TinderJobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-testi flex flex-col gap-5 rounded-[30px] bg-white p-5">
+                    <div class="flex h-[40px] shrink-0">
+                        <img src="{{ asset('images/logos/logo-testi3.svg') }}" alt="logo">
+                    </div>
+                    <p class="text-[22px] font-semibold leading-[40px]">“She helped us to build our first prototype to
+                        win our investor and early users heart that generate huge attraction. Will hire her back again
+                        anytime soon”</p>
+                    <div class="flex h-8">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="h-[70px] w-[70px] shrink-0">
+                            <img src="{{ asset('images/photo/photo3.png') }}" alt="photo">
+                        </div>
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="text-xl font-bold leading-[30px]">John Ceyna</p>
+                            <p class="text-lg text-[#878C9C]">Investor at Wokiya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-testi flex flex-col gap-5 rounded-[30px] bg-white p-5">
+                    <div class="flex h-[40px] shrink-0">
+                        <img src="{{ asset('images/logos/logo-testi4.svg') }}" alt="logo">
+                    </div>
+                    <p class="text-[22px] font-semibold leading-[40px]">“Her working method were truly different from
+                        other freelancers, she has this kind of mindset that can create user-center product and user
+                        loved it”</p>
+                    <div class="flex h-8">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                        <img src="{{ asset('images/icons/Star.svg') }}" alt="star">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="h-[70px] w-[70px] shrink-0">
+                            <img src="{{ asset('images/photo/photo.png') }}" alt="photo">
+                        </div>
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="text-xl font-bold leading-[30px]">Yein Balli</p>
+                            <p class="text-lg text-[#878C9C]">CMO Waniwani</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    
+    
+            {{-- Workflow --}}
+
+    <x-faq />
+
+    <x-footer />
+
+    @push('after-script')
+        <script src="{{ asset('js/main.js') }}"></script>
+    @endpush
+@endsection
