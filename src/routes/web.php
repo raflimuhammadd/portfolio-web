@@ -12,7 +12,6 @@ use App\Models\ProjectOrder;
 use App\Models\ProjectTool;
 use Illuminate\Support\Facades\Route;
 
-
 // FRONT ROUTES
 
 // Main page
