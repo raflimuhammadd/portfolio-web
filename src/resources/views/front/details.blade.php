@@ -101,11 +101,11 @@
         <div class="flex items-center gap-[100px] px-[65px] pt-[100px]">
             <div class="relative flex flex-col gap-5">
                 <div class="z-10 flex h-[250px] w-[200px] shrink-0 overflow-hidden rounded-[30px]">
-                    <img src="{{ asset('images/photo/photo5.png') }}" alt="photo">
+                    <img src="{{ asset('images/hero-image-1.png') }}" alt="photo">
                 </div>
                 <div class="flex flex-col gap-[6px] text-center">
-                    <p class="text-2xl font-bold">Shirley Pop</p>
-                    <p class="text-xl text-[#878C9C]">Founder Bwalajar</p>
+                    <p class="text-2xl font-bold">Jessie</p>
+                    <p class="text-xl text-[#878C9C]">Co Founder</p>
                 </div>
                 <img src="{{ asset('images/icons/quote.svg') }}"
                     class="absolute left-[21px] top-[14px] -translate-x-1/2 -translate-y-1/2 transform" alt="icon">

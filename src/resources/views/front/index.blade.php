@@ -8,8 +8,8 @@
         <x-nav />
         <div class="hero container relative mx-auto flex max-w-[1130px] items-center justify-between">
             <div class="z-10 flex h-fit w-fit flex-col gap-[50px] text-portto-black dark:text-white">
-                <p class="text-2xl font-semibold">I’m Shayna 👋</p>
-                <h1 class="text-[80px] font-extrabold leading-[90px]">Professional Designer & Dev</h1>
+                <p class="text-2xl font-semibold">I’m Jessie 👋</p>
+                <h1 class="text-[80px] font-extrabold leading-[90px]">Designer & Developer</h1>
                 <button
                     class="group flex w-fit items-center rounded-full bg-portto-purple px-6 py-4 text-xl font-bold text-white shadow-lg transition-all duration-300 hover:shadow-[0_10px_20px_0_#4920E5] hover:ring-4 hover:ring-portto-purple/30">
                     Explore Now
@@ -21,7 +21,7 @@
                 </button>
             </div>
             <div class="z-10 flex max-h-[567px] max-w-[471px]">
-                <img src="{{ asset('images/hero-image.png') }}" class="h-full w-full object-contain" alt="hero image">
+                <img src="{{ asset('images/hero-image-2.png') }}" class="h-full w-full object-contain" alt="hero image">
             </div>
         </div>
         <div class="company-logos w-full overflow-hidden pb-[190px]">
