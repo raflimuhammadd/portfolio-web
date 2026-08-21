@@ -45,15 +45,14 @@
                             Available for work
                         </span>
                         <a href="mailto:hello@portto.com"
-                            class="transition-all duration-300 hover:text-portto-purple dark:hover:text-white">hello@portto.com</a>
-                        <p>+1 202 555 0123</p>
+                            class="transition-all duration-300 hover:text-portto-purple dark:hover:text-white">admin@raflélio.com</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="flex items-center justify-between border-t border-[#E8E8E8] py-[30px] dark:border-white/10">
-            <p class="text-sm text-portto-black/40 dark:text-white/40">© 2024 Portto. All Rights Reserved.</p>
+            <p class="text-sm text-portto-black/40 dark:text-white/40">© 2024 Raflélio. All Rights Reserved.</p>
             <div class="flex items-center gap-[30px] text-sm text-portto-black/40 dark:text-white/40">
                 <a href="#"
                     class="transition-all duration-300 hover:text-portto-purple dark:hover:text-white">Privacy
